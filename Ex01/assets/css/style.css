@@ -1,0 +1,46 @@
+/* Ajout du smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style du bouton */
+a#returnBtn {
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 20px;
+    opacity: 1;
+    z-index: 99999;
+    transition: all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+/* Ajout de la flêche sur le bouton */
+a#returnBtn:before {
+    content: "\25b2";
+}
+
+/* Ajout d'effet sur le hover du bouton */
+a#returnBtn:hover {
+    background: rgba(0, 0, 0, 1);
+    transition: all ease-in 0.2s;
+}
+
+/* Animation qui cache le bouton (par defaut) */
+a#returnBtn.btnInvisible {
+    bottom: -35px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+/* On affiche le bouton */
+a#returnBtn.btnVisible {
+    bottom: 20px;
+    opacity: 1;
+}
