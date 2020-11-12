@@ -1,0 +1,11 @@
+/* deux classes visible et invisible pour afficher ou non le paragraphe avec un effet */
+
+.visible {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.invisible {
+    opacity: 0;
+    
+}
