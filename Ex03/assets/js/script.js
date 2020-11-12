@@ -14,7 +14,8 @@ document.onscroll = function () {
 function revealOnScroll(currentParagraph) {
     let position = currentParagraph.offsetTop;
 
-    if (window.pageYOffset + 200 > position) {
+    let windowHeight = window.window.innerHeight;
+    if (window.pageYOffset + windowHeight > position) {
         currentParagraph.classList.remove('invisible');
         currentParagraph.classList.add('visible');
     };
